@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.flowChart {
+    /*background-color: rgb(245, 245, 245);*/
+    padding: 12px;
+    height: 460px;
+    /*width: max-content;*/
+}
+.flowChart .solid {
+    width: 200px;
+    border-top-style: solid;
+    border-top-color: gainsboro;
+    border-top-width: 2px;
+    position: absolute;
+
+}
+.flowChart .oneNode {
+    display: flex;
+    position: relative;
+    height: 330px;
+    width: 200px;
+    float: left;
+}
+.flowChart .check {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    line-height: 40px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    left: 75px;
+    flex-shrink: 0;
+    background-color: rgb(125, 122, 117);
+    border: 4px solid rgb(173,168,163);
+}
+.tag-boder {
+    width: 2px;
+    height: 30px;
+    background: gainsboro;
+    position: absolute;
+    left: 99px;
+}
+.flowChart .NodeDetail {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    flex-grow: 1;
+    border: 5px solid gainsboro;
+    border-radius: 60px;
+    display: flex;
+    position: absolute;
+    left: 52px;
+    box-shadow: 1px 1px 10px gainsboro;
+}
+.NodeDetail-content {
+    width: 90px;
+    height: 90px;
+    font-size: 12px;
+    padding: 20px;
+}
+.BadgeGray {
+    background-color: rgb(104, 108, 104);
+}
+
+.upNode{
+    top: 25px;
+}
+.bottomNode{
+    top: 205px;
+}
+.upNode .NodeDetail{
+    top: 60px;
+}
+.upNode .check{
+    top: 182px;
+}
+.upNode .tag-boder{
+    top: 152px;
+}
+.upNode .solid{
+    top: 205px;
+}
+
+.bottomNode .NodeDetail{
+    top: 78px;
+}
+.bottomNode .check{
+    top: 0;
+}
+.bottomNode .tag-boder{
+    top: 48px;
+}
+.bottomNode .solid{
+    top: 25px;
+}
+
+
+.startNode{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+    position: relative;
+    right: 0;
+    float: left;
+    top: 224px;
+    flex-shrink: 0;
+    background-color: rgb(234, 234, 234);
+    border: 2px solid rgb(220, 220, 220);
+}
+.endNode {
+    width: 0;
+    height: 0;
+    border: 10px solid;
+    border-style: dashed;
+    border-color: transparent transparent transparent gainsboro;
+    position: relative;
+    float: left;
+    top: 221px;
+}
+
+.NodeDetail:hover::before {
+    content: attr(data-title);    /*取到data-title属性的值*/
+    display: block;
+    height: auto;
+    width: 250px;
+    padding: 10px 14px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #DEDEDE;
+    position: absolute;
+    top: -20px;
+    left: -50px;
+    z-index: 999;
+}
+
+
+.flowChart .check-success {
+    background-color: rgb(87, 194, 64);
+    border: 4px solid rgba(198, 228, 177,0.9);
+}
+.flowChart .check-danger {
+    background-color: rgb(228,108,35);
+    border: 4px solid rgb(250, 166, 122);
+}
+.flowChart .check-prime {
+    background-color: rgb(0, 136, 165);
+    border: 4px solid rgb(88, 191, 243);
+}
+.flowChart .check-warning {
+    background-color: rgb(248, 144,2);
+    border: 4px solid rgba(255, 208, 122,1);
+}
