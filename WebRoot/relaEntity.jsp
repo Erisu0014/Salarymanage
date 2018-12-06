@@ -390,7 +390,7 @@
             var nodes = [], links = [];
             $(document).ready(function () {
                 $.ajax({
-                    url: "http://47.92.155.245/Salarymanage/Searchrelation",
+                    url: "http://123.56.8.150/Salarymanage/Searchrelation",
                     dataType: "json",
                     type: "post",
                     async: true,
@@ -483,7 +483,7 @@
             var form = $("#i1").val();
             //console.log(form);
             $.ajax({
-                url: "http://47.92.155.245/Salarymanage/test?form=" + form+"&name=entity",
+                url: "http://123.56.8.150/Salarymanage/test?form=" + form+"&name=entity",
                 type: "get",
                 dataType: "json",
                 processData: false,

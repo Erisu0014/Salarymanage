@@ -181,7 +181,7 @@ function isInArray(arr,value){
 function MyVisual(){	
 	$(document).ready(function() {
     $.ajax({
-    url : "http://47.92.155.245/Salarymanage/Multientity",
+    url : "http://123.56.8.150/Salarymanage/Multientity",
     dataType : "json",
     type : "post",
 	data:{"name1":"基本工资","name2":"个人激励计划","count":"2"},

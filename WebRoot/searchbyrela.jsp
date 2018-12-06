@@ -379,7 +379,7 @@
             var name = document.getElementById("i1").value;
             $(document).ready(function () {
                 $.ajax({
-                    url: "http://47.92.155.245/Salarymanage/Searchbyrela",
+                    url: "http://123.56.8.150/Salarymanage/Searchbyrela",
                     dataType: "json",
                     type: "post",
                     async: true,
@@ -472,7 +472,7 @@
             var form = $("#i1").val();
             //console.log(form);
             $.ajax({
-                url: "http://47.92.155.245/Salarymanage/test?form=" + form+"&name=relation",
+                url: "http://123.56.8.150/Salarymanage/test?form=" + form+"&name=relation",
                 type: "get",
                 dataType: "json",
                 processData: false,

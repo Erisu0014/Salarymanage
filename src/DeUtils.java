@@ -18,7 +18,7 @@ public class DeUtils {
             Connection con = null;
             try {
                 con = DriverManager.getConnection(
-                        "jdbc:mysql://47.92.155.245:3306/salarymanage?useUnicode=true&characterEncoding=UTF-8",
+                        "jdbc:mysql://123.56.8.150:3306/salarymanage?useUnicode=true&characterEncoding=UTF-8",
                         "root", "ysu2018");
             } catch (SQLException e) {
                 e.printStackTrace();

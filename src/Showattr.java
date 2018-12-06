@@ -34,7 +34,7 @@ public class Showattr extends HttpServlet {
 	    String authorizationhead="neo4j:123456nba";
 	    String s=null;
 	    byte[] by = null;
-	    URL url = new URL("http://47.92.155.245:7474/db/data/transaction/commit");
+	    URL url = new URL("http://123.56.8.150:7474/db/data/transaction/commit");
 	    try {    
             by = authorizationhead.getBytes("utf-8");    
         } catch (UnsupportedEncodingException e) {    
